@@ -2,7 +2,7 @@
     <div class="details">
         <app-title title="Login"></app-title>
 
-        <form  (ngSubmit)="submit()">
+        <form  [formGroup]="loginForm" (ngSubmit)="submit()">
             <div class="input-container">
                 <label>Email</label>
                 <div>
